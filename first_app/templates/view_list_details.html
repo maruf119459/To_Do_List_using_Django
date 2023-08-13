@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div style="text-align: center;">
+    <div style="background-color: skyblue; width: 50%; height: 20px; display: inline-flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; border-radius: 10px;">
+        <h3 style="color: black; margin: 0;">Task's Details</h3>
+    </div>
+</div>
+<br>
+<table>
+    <tr>
+        <th>Title:{{item.title}}</th>
+    </tr>
+    <tr>
+        <th>Description :</th>
+    </tr>
+    <tr>
+        <td>{{item.description}}</td>
+    </tr>
+</table>
+
+{% endblock %}
